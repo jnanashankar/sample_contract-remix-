@@ -1,0 +1,38 @@
+// SPDX-License-Identifier:MIT
+pragma solidity ^0.8.7;
+contract samplecontract{
+    uint public myInteger;
+    bool public myBool;
+    string public myString;
+    address public myAddress;
+    function setInteger(uint newValue) public         
+    {myInteger = newValue;}
+    function setBool(bool newValue) public 
+    {
+        myBool = newValue;
+    }
+    function setString(string memory newValue) public 
+    {
+        myString = newValue;
+    }
+    function setAddress(address newValue) public 
+    {
+        myAddress = newValue;
+    }
+    function getInteger() public view returns(uint)
+    {
+        return myInteger;
+    }
+    function getBool() public view returns(bool)
+    {
+        return myBool;
+    }
+    function getString() public view returns(string memory)
+    {
+        return myString;
+    }
+    function getAddress() public view returns(address)
+    {
+        return myAddress;
+    }
+}
